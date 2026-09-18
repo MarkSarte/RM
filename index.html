@@ -1,609 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional PriceLabs revenue management for short-term rental operators. Dynamic pricing, pacing, minimum stays, orphan gaps, market benchmarking and portfolio reporting." />
-  <title>RevenuePilot | PriceLabs Revenue Management for STR Operators</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Active PriceLabs revenue management for short-term rental operators and property managers.">
+  <title>Revenue & Co. | PriceLabs Revenue Management</title>
+
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="RevenuePilot home">
-        <span class="brand-mark">R</span>
-        <span>RevenuePilot</span>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-top shell">
+      <a href="#home" class="brand" aria-label="Revenue and Co home">
+        <span class="brand-name">Revenue &amp; Co.</span>
+        <span class="brand-subtitle">Short-Term Rental Revenue Management</span>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#method">How It Works</a>
-        <a href="#operators">Who It's For</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+      <div class="header-contact">
+        <span>PriceLabs Strategy · Portfolio Revenue</span>
+        <a href="#audit">Request an Audit</a>
+      </div>
 
-      <a class="btn btn-sm btn-primary" href="#audit">Request Revenue Audit</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
     </div>
+
+    <div class="nav-rule"></div>
+
+    <nav class="site-nav shell" id="siteNav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#operators">Who It’s For</a>
+      <a href="#faq">FAQ</a>
+      <a href="#audit" class="nav-cta">Revenue Audit</a>
+    </nav>
   </header>
 
-  <main id="top">
-
+  <main id="main-content">
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">ACTIVE REVENUE MANAGEMENT FOR SHORT-TERM RENTALS</div>
-          <h1>Your PriceLabs Account Should Do More Than Change Prices.</h1>
-          <p class="hero-lead">
-            Professional PriceLabs revenue management for STR operators who want stronger pricing decisions
-            without spending hours inside dashboards.
-          </p>
-          <p class="hero-sub">
-            We actively manage rates, booking pace, minimum stays, orphan gaps, seasonal demand,
-            event pricing and market positioning—so your revenue strategy keeps adapting as the market changes.
-          </p>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Elegant short-term rental interior overlooking a city"></div>
+      <div class="hero-overlay"></div>
 
+      <div class="hero-content shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">ACTIVE PRICELABS REVENUE MANAGEMENT</p>
+          <h1>Your pricing engine deserves a revenue strategy.</h1>
+          <p class="hero-text">
+            Hands-on revenue management for professional short-term rental operators.
+            We steer PriceLabs around booking pace, market demand, minimum stays,
+            orphan gaps, events, seasonality and portfolio goals.
+          </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#audit">Get My Revenue Audit</a>
-            <a class="btn btn-secondary" href="#method">See How It Works</a>
-          </div>
-
-          <div class="mini-proof">
-            <span>PriceLabs Management</span>
-            <span>Market Benchmarking</span>
-            <span>Pacing Analysis</span>
-            <span>Stay Controls</span>
-          </div>
-        </div>
-
-        <div class="hero-panel" aria-label="Revenue management dashboard illustration">
-          <div class="panel-top">
-            <div>
-              <span class="panel-kicker">PORTFOLIO SNAPSHOT</span>
-              <h3>Revenue Decisions, Not Guesswork</h3>
-            </div>
-            <span class="status-pill">Active Review</span>
-          </div>
-
-          <div class="metric-grid">
-            <article class="metric-card">
-              <span class="metric-label">Forward Occupancy</span>
-              <strong>76%</strong>
-              <small>vs. target pace</small>
-            </article>
-            <article class="metric-card">
-              <span class="metric-label">ADR</span>
-              <strong>$214</strong>
-              <small>rate integrity</small>
-            </article>
-            <article class="metric-card">
-              <span class="metric-label">RevPAR</span>
-              <strong>$163</strong>
-              <small>yield focus</small>
-            </article>
-          </div>
-
-          <div class="calendar-card">
-            <div class="calendar-head">
-              <span>Upcoming 14 Days</span>
-              <span>Demand / Price</span>
-            </div>
-            <div class="calendar-bars">
-              <span style="--h: 52%"></span>
-              <span style="--h: 64%"></span>
-              <span style="--h: 71%"></span>
-              <span style="--h: 45%"></span>
-              <span style="--h: 83%"></span>
-              <span style="--h: 91%"></span>
-              <span style="--h: 76%"></span>
-              <span style="--h: 58%"></span>
-              <span style="--h: 67%"></span>
-              <span style="--h: 88%"></span>
-              <span style="--h: 94%"></span>
-              <span style="--h: 72%"></span>
-              <span style="--h: 61%"></span>
-              <span style="--h: 79%"></span>
-            </div>
-          </div>
-
-          <div class="decision-card">
-            <span class="dot"></span>
-            <div>
-              <strong>Next action</strong>
-              <p>Protect high-demand weekend inventory while opening a two-night gap midweek.</p>
-            </div>
+            <a class="button button-light" href="#audit">Request a Revenue Audit</a>
+            <a class="text-button" href="#approach">Explore the approach <span>↗</span></a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- VALUE STRIP -->
-    <section class="value-strip">
-      <div class="container strip-grid">
-        <div><strong>Price</strong><span>Rate strategy & guardrails</span></div>
-        <div><strong>Pace</strong><span>Booking speed & forward demand</span></div>
-        <div><strong>Calendar</strong><span>Minimum stays & gap recovery</span></div>
-        <div><strong>Market</strong><span>Comp sets & demand signals</span></div>
+      <div class="hero-note">
+        <span>PriceLabs Management</span>
+        <span>Market Benchmarking</span>
+        <span>Pacing Analysis</span>
+        <span>Executive Reporting</span>
       </div>
     </section>
 
-    <!-- POSITIONING -->
-    <section class="section section-light">
-      <div class="container split">
-        <div>
-          <div class="eyebrow dark">WHY ACTIVE MANAGEMENT MATTERS</div>
-          <h2>PriceLabs Is Powerful. But It Doesn't Know Your Business Strategy.</h2>
+    <!-- INTRO -->
+    <section class="intro section">
+      <div class="shell intro-grid">
+        <div class="section-number reveal">01</div>
+
+        <div class="intro-heading reveal">
+          <p class="eyebrow dark">REVENUE MANAGEMENT, NOT SET-AND-FORGET PRICING</p>
+          <h2>PriceLabs can change rates. It still needs someone to decide what those rates should accomplish.</h2>
         </div>
-        <div class="copy-stack">
+
+        <div class="intro-copy reveal">
           <p>
-            Dynamic pricing software can process market data and recommend nightly rates.
-            But it does not know whether your priority this month is protecting ADR,
-            accelerating weekday occupancy, defending a premium position, or improving portfolio-level RevPAR.
+            A pricing algorithm can process market signals, but it does not know whether your
+            priority is protecting ADR, accelerating weekday occupancy, holding premium inventory,
+            reducing stranded calendar gaps, or improving portfolio-level RevPAR.
           </p>
           <p>
-            Revenue management adds the human layer: interpreting booking pace, deciding when to hold,
-            when to discount, when to change stay rules, and when remaining inventory is becoming more valuable.
+            That is where active revenue management begins: interpreting the signal, setting the guardrails,
+            monitoring performance and intervening when the calendar behaves differently than expected.
           </p>
-          <div class="callout">
-            <strong>PriceLabs provides the pricing engine.</strong>
-            <span>Revenue management provides the strategy behind it.</span>
-          </div>
+          <a class="underlined-link" href="#services">See what is managed</a>
         </div>
       </div>
     </section>
 
-    <!-- PROBLEM / DIFFERENTIATOR -->
-    <section class="section section-dark">
-      <div class="container">
-        <div class="section-head narrow">
-          <div class="eyebrow">THE DIAGNOSIS COMES BEFORE THE DISCOUNT</div>
-          <h2>Sometimes the Problem Isn't the Price.</h2>
+    <!-- STATEMENT IMAGE BAND -->
+    <section class="statement-band">
+      <div class="statement-image"></div>
+      <div class="statement-panel reveal">
+        <p class="eyebrow light">THE DIFFERENCE</p>
+        <blockquote>
+          “PriceLabs provides the pricing engine. Revenue management provides the commercial judgment behind it.”
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- REVENUE LEVERS -->
+    <section class="section services" id="services">
+      <div class="shell">
+        <div class="section-title-row">
+          <div class="section-number reveal">02</div>
+          <div class="section-heading reveal">
+            <p class="eyebrow dark">THE FOUR REVENUE LEVERS</p>
+            <h2>A simple framework for complex pricing decisions.</h2>
+          </div>
+        </div>
+
+        <div class="service-list">
+          <article class="service-row reveal">
+            <span class="service-index">01</span>
+            <div class="service-title">
+              <h3>Price</h3>
+              <p>Sell the right night at the right rate.</p>
+            </div>
+            <div class="service-copy">
+              <p>
+                Base-price positioning, floors and ceilings, day-of-week demand, seasonality,
+                local events, far-out premiums and last-minute adjustments.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-row reveal">
+            <span class="service-index">02</span>
+            <div class="service-title">
+              <h3>Pace</h3>
+              <p>Know when you are selling too fast—or too slowly.</p>
+            </div>
+            <div class="service-copy">
+              <p>
+                Booking pickup and forward occupancy are reviewed against expected demand so
+                pricing can move before weak performance becomes a last-minute problem.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-row reveal">
+            <span class="service-index">03</span>
+            <div class="service-title">
+              <h3>Calendar</h3>
+              <p>Make more of the inventory you already have.</p>
+            </div>
+            <div class="service-copy">
+              <p>
+                Dynamic minimum stays, orphan-gap recovery and length-of-stay controls help reduce
+                stranded inventory without discounting every open night.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-row reveal">
+            <span class="service-index">04</span>
+            <div class="service-title">
+              <h3>Market</h3>
+              <p>Price against the competitors that actually matter.</p>
+            </div>
+            <div class="service-copy">
+              <p>
+                Relevant comp sets, market pickup and local demand are used to understand whether
+                each listing is underpriced, overpriced or appropriately positioned.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAGNOSIS -->
+    <section class="diagnosis section">
+      <div class="shell diagnosis-grid">
+        <div class="diagnosis-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1400&q=85"
+            alt="Modern short-term rental apartment interior"
+            loading="lazy">
+        </div>
+
+        <div class="diagnosis-copy reveal">
+          <p class="eyebrow dark">THE DIAGNOSIS COMES FIRST</p>
+          <h2>Sometimes the problem isn’t the price.</h2>
           <p>
             An empty night does not automatically mean the rate should be reduced.
-            The real constraint may be somewhere else in the booking funnel.
+            A restriction, booking-window mismatch or weak calendar pattern may be suppressing demand.
           </p>
+
+          <div class="diagnosis-list">
+            <button class="diagnosis-item active" type="button" data-detail="A rigid 3-night rule can block demand for a 2-night gap. The better action may be to open the stay rule—not cut the rate.">
+              <span>01</span> Minimum-stay restrictions
+            </button>
+            <button class="diagnosis-item" type="button" data-detail="One- and two-night holes between bookings can become stranded inventory without gap-specific stay and pricing logic.">
+              <span>02</span> Orphan gaps
+            </button>
+            <button class="diagnosis-item" type="button" data-detail="Market averages can mislead. A useful comp set should reflect the homes a guest would realistically choose instead of yours.">
+              <span>03</span> Incorrect comp sets
+            </button>
+            <button class="diagnosis-item" type="button" data-detail="Some properties naturally book later or earlier. Pricing decisions should respect the listing’s actual lead-time pattern.">
+              <span>04</span> Booking-window mismatch
+            </button>
+            <button class="diagnosis-item" type="button" data-detail="A whole-calendar discount can destroy ADR when the real issue is limited to specific weekdays or stay patterns.">
+              <span>05</span> Day-of-week weakness
+            </button>
+          </div>
+
+          <div class="diagnosis-detail" id="diagnosisDetail" aria-live="polite">
+            A rigid 3-night rule can block demand for a 2-night gap. The better action may be to open the stay rule—not cut the rate.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section class="section approach" id="approach">
+      <div class="shell">
+        <div class="section-title-row">
+          <div class="section-number reveal">03</div>
+          <div class="section-heading reveal">
+            <p class="eyebrow dark">HOW ACTIVE MANAGEMENT WORKS</p>
+            <h2>A disciplined rhythm behind every pricing decision.</h2>
+          </div>
         </div>
 
-        <div class="issue-grid">
-          <article class="issue-card">
+        <div class="process-track">
+          <article class="process-card reveal">
             <span>01</span>
-            <h3>Minimum Stay</h3>
-            <p>A rigid stay restriction may block otherwise valuable demand.</p>
+            <h3>Audit</h3>
+            <p>Review PriceLabs settings, ADR, occupancy, RevPAR, booking pace, stay rules, comp positioning and upcoming demand.</p>
           </article>
-          <article class="issue-card">
+          <article class="process-card reveal">
             <span>02</span>
-            <h3>Orphan Gap</h3>
-            <p>One- or two-night holes can become stranded inventory without gap-specific rules.</p>
+            <h3>Build</h3>
+            <p>Define market position, rate guardrails, seasonal logic, occupancy rules, far-out strategy and last-minute behavior.</p>
           </article>
-          <article class="issue-card">
+          <article class="process-card reveal">
             <span>03</span>
-            <h3>Wrong Comp Set</h3>
-            <p>Market averages are less useful than the listings guests truly compare against yours.</p>
+            <h3>Monitor</h3>
+            <p>Watch pickup, forward occupancy, events, high-demand dates, floor hits, gaps and other performance exceptions.</p>
           </article>
-          <article class="issue-card">
+          <article class="process-card reveal">
             <span>04</span>
-            <h3>Booking Window</h3>
-            <p>Your property may simply book later—or earlier—than the market average.</p>
+            <h3>Intervene</h3>
+            <p>Adjust the control that is actually causing the issue—price, stay rule, market position or booking-window strategy.</p>
           </article>
-          <article class="issue-card">
+          <article class="process-card reveal">
             <span>05</span>
-            <h3>Weekday Weakness</h3>
-            <p>Day-of-week demand may require targeted pricing instead of a portfolio-wide discount.</p>
-          </article>
-          <article class="issue-card">
-            <span>06</span>
-            <h3>Conversion Friction</h3>
-            <p>Fees, availability rules or listing quality can suppress demand even when rates look competitive.</p>
+            <h3>Report</h3>
+            <p>Communicate what happened, why it happened and what changes are being made next.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FOUR LEVERS -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow dark">THE FOUR REVENUE LEVERS</div>
-          <h2>A Revenue Strategy Built Around How Your Calendar Actually Sells.</h2>
-          <p>
-            Instead of changing settings for the sake of activity, every intervention connects to one of four commercial levers.
-          </p>
+    <!-- REPORTING -->
+    <section class="reporting">
+      <div class="reporting-photo"></div>
+      <div class="reporting-content reveal">
+        <p class="eyebrow light">NO BLACK-BOX REVENUE MANAGEMENT</p>
+        <h2>Clear decisions. Clear reasons. Clear next actions.</h2>
+
+        <div class="report-lines">
+          <div>
+            <span>What happened?</span>
+            <p>Midweek forward occupancy moved behind target pace.</p>
+          </div>
+          <div>
+            <span>Why?</span>
+            <p>Market pickup softened and the current minimum stay is restricting short demand.</p>
+          </div>
+          <div>
+            <span>What next?</span>
+            <p>Open targeted two-night windows while preserving weekend rate integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPERATORS -->
+    <section class="section operators" id="operators">
+      <div class="shell">
+        <div class="section-title-row">
+          <div class="section-number reveal">04</div>
+          <div class="section-heading reveal">
+            <p class="eyebrow dark">WHO THIS IS FOR</p>
+            <h2>For operators who have outgrown DIY pricing.</h2>
+          </div>
         </div>
 
-        <div class="lever-grid">
-          <article class="lever-card">
-            <div class="lever-icon">01</div>
-            <h3>Price</h3>
-            <h4>Sell the right night at the right rate.</h4>
-            <p>
-              Base-price positioning, rate floors, ceilings, day-of-week demand,
-              seasonality, events, far-out premiums and last-minute adjustments.
-            </p>
+        <div class="operator-grid">
+          <article class="operator-card reveal">
+            <p class="operator-size">3–10 properties</p>
+            <h3>Growing Host</h3>
+            <p>You know PriceLabs is useful, but managing every customization and calendar is consuming too much time.</p>
           </article>
 
-          <article class="lever-card">
-            <div class="lever-icon">02</div>
-            <h3>Pace</h3>
-            <h4>Know when you're selling too fast—or too slowly.</h4>
-            <p>
-              Forward occupancy and booking pickup are reviewed against expected pace
-              so pricing can move before performance becomes a problem.
-            </p>
+          <article class="operator-card reveal">
+            <p class="operator-size">10–30 properties</p>
+            <h3>Professional Operator</h3>
+            <p>Pricing inconsistencies, market complexity and owner expectations are becoming harder to manage manually.</p>
           </article>
 
-          <article class="lever-card">
-            <div class="lever-icon">03</div>
-            <h3>Calendar</h3>
-            <h4>Make more of the inventory you already have.</h4>
-            <p>
-              Dynamic minimum stays, orphan-gap recovery and length-of-stay strategy
-              reduce stranded nights and improve calendar efficiency.
-            </p>
-          </article>
-
-          <article class="lever-card">
-            <div class="lever-icon">04</div>
-            <h3>Market</h3>
-            <h4>Price against the competitors that actually matter.</h4>
-            <p>
-              Comp-set benchmarking helps determine whether your listing is underpriced,
-              overpriced or appropriately positioned for current demand.
-            </p>
+          <article class="operator-card reveal">
+            <p class="operator-size">30+ properties</p>
+            <h3>Property Manager</h3>
+            <p>You need portfolio standards, market segmentation, listing-level exceptions and concise commercial reporting.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="section section-soft" id="method">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow dark">HOW ACTIVE MANAGEMENT WORKS</div>
-          <h2>Audit. Build. Monitor. Intervene. Report.</h2>
-          <p>A structured revenue cycle gives automation the oversight it needs.</p>
+    <!-- SERVICE OPTIONS -->
+    <section class="section packages">
+      <div class="shell">
+        <div class="section-title-row">
+          <div class="section-number reveal">05</div>
+          <div class="section-heading reveal">
+            <p class="eyebrow dark">WAYS TO WORK TOGETHER</p>
+            <h2>Start with the level of support your portfolio needs.</h2>
+          </div>
         </div>
 
-        <div class="process">
-          <article class="process-step">
-            <span>01</span>
-            <div>
-              <h3>Revenue Audit</h3>
-              <p>Review PriceLabs configuration, occupancy, ADR, RevPAR, booking pace, minimum stays, gaps, comps and upcoming demand.</p>
-            </div>
-          </article>
-
-          <article class="process-step">
-            <span>02</span>
-            <div>
-              <h3>Strategy Build</h3>
-              <p>Define market position, rate guardrails, seasonal logic, day-of-week pricing, last-minute rules, far-out premiums and stay controls.</p>
-            </div>
-          </article>
-
-          <article class="process-step">
-            <span>03</span>
-            <div>
-              <h3>PriceLabs Implementation</h3>
-              <p>Configure the account around your business model, property mix and booking behavior—not generic defaults.</p>
-            </div>
-          </article>
-
-          <article class="process-step">
-            <span>04</span>
-            <div>
-              <h3>Continuous Monitoring</h3>
-              <p>Review booking pace, forward occupancy, event demand, market compression and pricing exceptions before they become expensive.</p>
-            </div>
-          </article>
-
-          <article class="process-step">
-            <span>05</span>
-            <div>
-              <h3>Executive Reporting</h3>
-              <p>Receive clear updates around what happened, why it happened and what we are doing next.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow dark">SERVICE OPTIONS</div>
-          <h2>Start With the Level of Support Your Portfolio Needs.</h2>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <div>
-              <span class="service-tag">DIAGNOSTIC</span>
-              <h3>Revenue Audit</h3>
-              <p>For operators who want an expert second opinion before changing their current setup.</p>
-            </div>
+        <div class="package-grid">
+          <article class="package-card reveal">
+            <span class="package-type">Diagnostic</span>
+            <h3>Revenue Audit</h3>
+            <p>For operators who want an expert second opinion before changing their current setup.</p>
             <ul>
               <li>PriceLabs configuration review</li>
-              <li>Base / minimum / maximum price assessment</li>
-              <li>Forward occupancy and pacing check</li>
-              <li>Stay-rule and orphan-gap review</li>
+              <li>Base / min / max price assessment</li>
+              <li>Booking-pace check</li>
+              <li>Minimum-stay and gap review</li>
               <li>Comp-set positioning</li>
               <li>Priority action plan</li>
             </ul>
-            <a href="#audit" class="text-link">Request Audit →</a>
+            <a href="#audit">Request Audit <span>↗</span></a>
           </article>
 
-          <article class="service-card featured">
-            <div>
-              <span class="service-tag">FOUNDATION</span>
-              <h3>PriceLabs Optimization</h3>
-              <p>For new accounts or existing setups that need a stronger pricing and stay-control framework.</p>
-            </div>
+          <article class="package-card featured reveal">
+            <span class="package-type">Foundation</span>
+            <h3>PriceLabs Optimization</h3>
+            <p>For new accounts or existing setups that need a stronger pricing and calendar framework.</p>
             <ul>
-              <li>Revenue strategy development</li>
-              <li>Base-rate framework</li>
-              <li>Rate floors and ceilings</li>
-              <li>Occupancy-based adjustments</li>
-              <li>Last-minute and far-out strategy</li>
-              <li>Minimum stays and gap rules</li>
+              <li>Revenue strategy build</li>
+              <li>Rate guardrails</li>
+              <li>Occupancy adjustments</li>
+              <li>Far-out and last-minute rules</li>
+              <li>Minimum stays</li>
+              <li>Gap-fill configuration</li>
             </ul>
-            <a href="#audit" class="text-link">Optimize My Setup →</a>
+            <a href="#audit">Optimize My Setup <span>↗</span></a>
           </article>
 
-          <article class="service-card">
-            <div>
-              <span class="service-tag">ONGOING</span>
-              <h3>Active Revenue Management</h3>
-              <p>For professional operators who want pricing actively monitored and managed.</p>
-            </div>
+          <article class="package-card reveal">
+            <span class="package-type">Ongoing</span>
+            <h3>Active Revenue Management</h3>
+            <p>For professional operators who want PriceLabs actively monitored, steered and reported on.</p>
             <ul>
               <li>Ongoing PriceLabs oversight</li>
               <li>Weekly performance review</li>
-              <li>Booking-pace monitoring</li>
               <li>Market and event monitoring</li>
-              <li>Gap and stay-rule optimization</li>
-              <li>Revenue reporting and actions</li>
+              <li>Booking-pace management</li>
+              <li>Stay-rule optimization</li>
+              <li>Executive revenue updates</li>
             </ul>
-            <a href="#audit" class="text-link">Discuss Management →</a>
+            <a href="#audit">Discuss Management <span>↗</span></a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- WHO IT IS FOR -->
-    <section class="section section-dark" id="operators">
-      <div class="container split top-align">
-        <div>
-          <div class="eyebrow">BUILT FOR OPERATORS WHO HAVE OUTGROWN DIY PRICING</div>
-          <h2>Professional Revenue Oversight Without Building an In-House RM Team.</h2>
-          <p class="light-copy">
-            The service scales from growing professional hosts to multi-property managers that need
-            consistent portfolio-level controls and listing-level exceptions.
-          </p>
-        </div>
-
-        <div class="operator-stack">
-          <article>
-            <span>3–10 properties</span>
-            <h3>Growing Host</h3>
-            <p>You know PriceLabs works, but managing every customization and calendar is taking too much time.</p>
-          </article>
-          <article>
-            <span>10–30 properties</span>
-            <h3>Professional Operator</h3>
-            <p>Pricing inconsistencies, owner expectations and market complexity are becoming harder to manage manually.</p>
-          </article>
-          <article>
-            <span>30+ properties</span>
-            <h3>Property Manager</h3>
-            <p>You need portfolio pricing standards, market segmentation, exception management and concise reporting.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRANSPARENCY -->
-    <section class="section">
-      <div class="container transparency">
-        <div class="section-head left">
-          <div class="eyebrow dark">NO BLACK-BOX REVENUE MANAGEMENT</div>
-          <h2>You Should Understand Why the Strategy Changed.</h2>
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="shell faq-grid">
+        <div class="faq-heading reveal">
+          <p class="eyebrow dark">FREQUENTLY ASKED</p>
+          <h2>Before we work together.</h2>
           <p>
-            When rates move, stay rules change or a future date is protected, you should know the commercial reason behind the decision.
+            Revenue management works best when expectations, guardrails and decision rights are clear from the start.
           </p>
         </div>
 
-        <div class="report-card">
-          <div class="report-row">
-            <span class="report-num">01</span>
-            <div>
-              <strong>What happened?</strong>
-              <p>Forward occupancy slowed across midweek dates.</p>
+        <div class="accordion" id="accordion">
+          <article class="accordion-item reveal">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>Do I need PriceLabs already?</span><span class="plus">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>No. We can begin with a new PriceLabs setup or audit and rebuild an existing configuration.</p>
             </div>
-          </div>
-          <div class="report-row">
-            <span class="report-num">02</span>
-            <div>
-              <strong>Why did it happen?</strong>
-              <p>Market pickup is softer and current minimum-stay rules are restricting demand.</p>
+          </article>
+
+          <article class="accordion-item reveal">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>Is higher occupancy always the goal?</span><span class="plus">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>No. Some properties need more occupancy; others are selling too quickly and may have room to increase rates. The aim is a stronger balance between occupancy, ADR, RevPAR and profitability.</p>
             </div>
-          </div>
-          <div class="report-row">
-            <span class="report-num">03</span>
-            <div>
-              <strong>What are we doing next?</strong>
-              <p>Open targeted two-night windows and recalibrate weekday rates without discounting peak weekends.</p>
+          </article>
+
+          <article class="accordion-item reveal">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>How often is pricing reviewed?</span><span class="plus">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>PriceLabs can update rates automatically, while strategic review focuses on pacing, market shifts, events, stay controls and exceptions that need human intervention.</p>
             </div>
-          </div>
+          </article>
+
+          <article class="accordion-item reveal">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>Can you guarantee a revenue increase?</span><span class="plus">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>No responsible revenue manager should guarantee a specific outcome. Performance depends on market demand, listing quality, reviews, competition, distribution, regulations and broader economic conditions.</p>
+            </div>
+          </article>
+
+          <article class="accordion-item reveal">
+            <button class="accordion-trigger" type="button" aria-expanded="false">
+              <span>Do you work with multi-property portfolios?</span><span class="plus">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p>Yes. Portfolio engagements can include market groups, standardized pricing profiles, property-level exceptions, stay-rule structures and portfolio reporting.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- AUDIT CTA -->
-    <section class="audit" id="audit">
-      <div class="container audit-grid">
-        <div>
-          <div class="eyebrow">START WITH A REVENUE AUDIT</div>
-          <h2>Find the Highest-Priority Opportunities in Your Current Pricing Strategy.</h2>
+    <!-- AUDIT -->
+    <section class="audit section" id="audit">
+      <div class="shell audit-grid">
+        <div class="audit-intro reveal">
+          <p class="eyebrow light">START WITH A REVENUE AUDIT</p>
+          <h2>Find the highest-priority opportunities in your current pricing setup.</h2>
           <p>
-            Share your portfolio details and current PriceLabs setup. The review focuses on the controls most likely
-            to affect pricing quality, booking pace and calendar efficiency.
+            Tell us about your portfolio, market and current PriceLabs configuration.
+            The review is designed to identify practical revenue-management priorities—not bury you in dashboards.
           </p>
 
-          <div class="audit-list">
-            <span>✓ PriceLabs configuration review</span>
-            <span>✓ Base / min / max assessment</span>
-            <span>✓ Booking-pace and forward occupancy check</span>
-            <span>✓ Minimum-stay and orphan-gap review</span>
-            <span>✓ Comp-set positioning</span>
-            <span>✓ Priority action plan</span>
+          <div class="audit-points">
+            <span>PriceLabs configuration</span>
+            <span>Base / min / max prices</span>
+            <span>Booking pace</span>
+            <span>Minimum stays & gaps</span>
+            <span>Comp-set positioning</span>
+            <span>Priority action plan</span>
           </div>
         </div>
 
-        <form class="audit-form" action="#" method="post">
-          <h3>Request Your Revenue Audit</h3>
+        <form class="audit-form reveal" id="auditForm" novalidate>
+          <div class="form-heading">
+            <span>Revenue Audit Request</span>
+            <p>Complete the form and we’ll use these details to frame the initial review.</p>
+          </div>
 
-          <div class="field-row">
+          <div class="form-row">
             <label>
               Name
-              <input type="text" name="name" placeholder="Your name" required />
+              <input type="text" name="name" required autocomplete="name">
             </label>
             <label>
               Work email
-              <input type="email" name="email" placeholder="you@company.com" required />
+              <input type="email" name="email" required autocomplete="email">
             </label>
           </div>
 
-          <div class="field-row">
+          <div class="form-row">
             <label>
               Company
-              <input type="text" name="company" placeholder="Company name" />
+              <input type="text" name="company" autocomplete="organization">
             </label>
             <label>
-              Number of properties
+              Portfolio size
               <select name="portfolio">
-                <option>1–2</option>
-                <option>3–10</option>
-                <option>11–30</option>
-                <option>31–100</option>
-                <option>100+</option>
+                <option value="">Select</option>
+                <option>1–2 properties</option>
+                <option>3–10 properties</option>
+                <option>11–30 properties</option>
+                <option>31–100 properties</option>
+                <option>100+ properties</option>
               </select>
             </label>
           </div>
 
           <label>
             Primary market
-            <input type="text" name="market" placeholder="City / region" />
+            <input type="text" name="market" placeholder="City / region">
           </label>
 
           <label>
             What would you like to improve?
-            <textarea name="challenge" rows="4" placeholder="Tell us about your current pricing setup, occupancy, ADR or revenue-management challenge."></textarea>
+            <textarea name="challenge" rows="4" placeholder="Tell us about your pricing, occupancy, ADR, RevPAR or calendar challenge."></textarea>
           </label>
 
-          <button class="btn btn-primary btn-full" type="submit">Request My Revenue Audit</button>
-          <p class="form-note">No guaranteed revenue claims. Recommendations depend on property, market and booking data.</p>
+          <button class="button button-dark" type="submit">Request My Revenue Audit</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="fine-print">
+            Demo front-end form. Connect this form to your CRM, email service or form endpoint before publishing.
+          </p>
         </form>
       </div>
     </section>
-
-    <!-- FAQ -->
-    <section class="section section-soft" id="faq">
-      <div class="container faq-wrap">
-        <div class="section-head left">
-          <div class="eyebrow dark">FAQ</div>
-          <h2>Questions Professional Operators Usually Ask.</h2>
-        </div>
-
-        <div class="faq-list">
-          <details>
-            <summary>Do I need PriceLabs already?</summary>
-            <p>No. The service can begin with a new PriceLabs setup or an audit of an existing account.</p>
-          </details>
-
-          <details>
-            <summary>Will you increase my occupancy?</summary>
-            <p>
-              Occupancy is only one part of the objective. Some properties need more occupancy; others are already
-              selling too quickly and may benefit from stronger rates. The focus is the balance between ADR, occupancy,
-              RevPAR and profitability.
-            </p>
-          </details>
-
-          <details>
-            <summary>How often do you change pricing?</summary>
-            <p>
-              PriceLabs can update recommendations automatically. Strategic interventions are made when booking pace,
-              market demand or portfolio performance justifies a change.
-            </p>
-          </details>
-
-          <details>
-            <summary>Can you guarantee a specific revenue increase?</summary>
-            <p>
-              No responsible revenue manager should guarantee a specific financial result. Performance depends on market
-              demand, property quality, reviews, distribution, competition, regulations and broader economic conditions.
-            </p>
-          </details>
-
-          <details>
-            <summary>Do you work with multi-property portfolios?</summary>
-            <p>
-              Yes. Portfolio engagements can include listing groups, market segmentation, standardized pricing profiles,
-              exception handling and portfolio-level reporting.
-            </p>
-          </details>
-
-          <details>
-            <summary>Are you affiliated with PriceLabs?</summary>
-            <p>
-              This website presents independent revenue-management services using PriceLabs as a pricing and market-analysis platform.
-              Update this statement if your official partner status changes.
-            </p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta">
-      <div class="container final-cta-inner">
-        <div>
-          <span class="eyebrow">YOUR CALENDAR IS PERISHABLE INVENTORY</span>
-          <h2>Turn PriceLabs Into a Revenue System, Not Just a Pricing Tool.</h2>
-        </div>
-        <a href="#audit" class="btn btn-light">Request Revenue Audit</a>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a class="brand footer-brand" href="#top">
-          <span class="brand-mark">R</span>
-          <span>RevenuePilot</span>
-        </a>
-        <p>Professional PriceLabs revenue management for short-term rental operators.</p>
-      </div>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <a href="#home" class="brand footer-brand">
+        <span class="brand-name">Revenue &amp; Co.</span>
+        <span class="brand-subtitle">Short-Term Rental Revenue Management</span>
+      </a>
 
-      <div class="footer-links">
+      <div class="footer-nav">
         <a href="#services">Services</a>
-        <a href="#method">How It Works</a>
-        <a href="#operators">Who It's For</a>
+        <a href="#approach">Approach</a>
+        <a href="#operators">Who It’s For</a>
         <a href="#faq">FAQ</a>
+        <a href="#audit">Contact</a>
       </div>
 
-      <div class="footer-note">
-        <p>PriceLabs is a trademark of its respective owner. RevenuePilot is an independent service unless otherwise stated.</p>
+      <div class="footer-copy">
+        <p>
+          Independent revenue-management services using PriceLabs as a pricing and market-analysis platform.
+          PriceLabs is a trademark of its respective owner.
+        </p>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© 2026 RevenuePilot. All rights reserved.</span>
+
+    <div class="shell footer-bottom">
+      <span>© 2026 Revenue &amp; Co.</span>
       <span>Privacy · Terms</span>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 </body>
 </html>
