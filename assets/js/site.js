@@ -1,0 +1,2 @@
+
+const header=document.querySelector('.site-header');const btn=document.querySelector('.menu-button');if(btn){btn.addEventListener('click',()=>{const open=header.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false')});document.addEventListener('click',e=>{if(header.classList.contains('open')&&!header.contains(e.target)){header.classList.remove('open');btn.setAttribute('aria-expanded','false')}})}
